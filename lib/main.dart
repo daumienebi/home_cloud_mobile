@@ -5,7 +5,6 @@ import 'package:home_cloud/utils/app_routes.dart';
 import 'package:provider/provider.dart';
 
 void main() {
-  //runApp(const MyApp());
   WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp])
       .then((value) => runApp(const MyApp()));
@@ -18,14 +17,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     //Make the status bar the same as the scaffold color
     SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
-        statusBarColor: Colors.lightBlue[100],
+        statusBarColor: Colors.grey.shade900,
         systemNavigationBarDividerColor: Colors.transparent
     ));
     return  MaterialApp(
       title: 'Home Cloud',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-          scaffoldBackgroundColor: Colors.lightBlue[100],
           textTheme: GoogleFonts.varelaRoundTextTheme()
       ),
       routes: AppRoutes.allRoutes,

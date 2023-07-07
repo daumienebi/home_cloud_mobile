@@ -12,7 +12,7 @@ class AboutAppScreen extends StatelessWidget{
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.lightBlue.shade100,
+        backgroundColor: Colors.grey.shade900,
         shadowColor: Colors.transparent,
         title: const Text('About app'),
       ),
@@ -47,9 +47,9 @@ class AboutAppScreen extends StatelessWidget{
     return ListView(
       children: [
         _AboutAppListTile(
-            title: 'Stars Level',
-            subtitle: 'Available star levels',
-            iconData: Icons.star,
+            title: 'Update app',
+            subtitle: 'Obtain the latest update',
+            iconData: Icons.feedback,
             onTap: (){}
         ),
         _AboutAppListTile(
@@ -120,6 +120,20 @@ class AboutAppScreen extends StatelessWidget{
             final url = Uri.parse('https://daumienebi.github.io/yo_nunca/policy.html');
             await launchUrl(url,mode: LaunchMode.externalApplication);
           },
+        ),
+        _AboutAppListTile(
+            title: 'Contribute',
+            subtitle: 'Suggest enhancements or report errors',
+            iconData: Icons.feedback,
+            onTap: (){}
+        ),
+        _AboutAppListTile(
+            title: 'Donate',
+            subtitle: 'Support the project',
+            iconData: Icons.monetization_on,
+            onTap: (){
+              // Navigate to another page and add more details
+            }
         ),
       ],
     );
@@ -263,7 +277,7 @@ class _AboutAppListTile extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     final titleStyle = TextStyle(fontSize: 16,color: dangerZone ? Colors.red : Colors.black87);
-    final Color iconColor = Colors.blueGrey.shade500;
+    final Color iconColor = Colors.grey.shade700;
     // TODO: implement build
     return ListTile(
         title: Text(title,style: titleStyle),

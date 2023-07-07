@@ -1,4 +1,4 @@
-import 'package:home_cloud/ui/screens/home_screen.dart';
+import 'package:home_cloud/view/screens/home_screen.dart';
 
 /// Class to handle the navigation in case the Navigator..pushNamed(..) method
 /// is used
