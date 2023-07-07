@@ -1,4 +1,4 @@
-package com.devdaumienebi.home_cloud.home_cloud
+package com.devdaumienebi.home_cloud
 
 import io.flutter.embedding.android.FlutterActivity
 
