@@ -17,7 +17,7 @@ class HomeScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Text('Home Kloud️'),
+            const Text('Home Cloud️'),
             appBarTitle(true)
           ],
         ),

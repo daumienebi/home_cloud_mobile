@@ -3,7 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:home_cloud/utils/app_routes.dart';
 import 'package:provider/provider.dart';
-
+// <a href="https://www.flaticon.com/free-icons/cloud-computing" title="cloud-computing icons">Cloud-computing icons created by Freepik - Flaticon</a>
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp])
